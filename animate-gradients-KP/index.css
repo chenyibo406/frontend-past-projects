@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gradient: linear-gradient(45deg, #ee6352, purple, #ee6352);
+}
+
+body {
+  font-family: basic-sans, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: #333;
+  background: #ddd;
+  background-size: 400%;
+  background-image: var(--gradient);
+  animation: bg-animation 20s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+/* 100vh means that the initial body height will
+take 100% of the viewport height, whereas the use of
+min-height instead of height will let the body element 
+grow even more if necessary */
+
+.content {
+  background: white;
+  width: 70vw;
+  padding: 3em;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  margin: 0 0 0.5em;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 6rem;
+  color: #ee6352;
+  line-height: 0.8;
+  margin: 0;
+
+  background-image: var(--gradient);
+  /* background-clip: text; */
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: bg-animation 5s infinite alternate;
+}
+
+.fun {
+  border: 0;
+  padding: 0.5em 1.5em;
+  font-size: 2rem;
+  background-image: var(--gradient);
+  /* transition: background-image 1s; */
+  background-size: 300%;
+  background-position: left;
+
+  transition: background-position 1s;
+}
+
+.fun:hover,
+.fun:focus {
+  /* background-image: linear-gradient(red, blue); */
+  background-position: right;
+}

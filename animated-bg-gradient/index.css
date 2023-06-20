@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ? diffrent of body and html and * of everything */
+
+.bg-container {
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(60deg, #ff6596, #60bef8, #d88cff);
+  /* background-position: cover; */
+  background-size: 600% 600%;
+  animation: bgAnimatedGradient 15s infinite linear;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 25%;
+
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 6px;
+  font-size: 4vw;
+  color: white;
+}
+
+@keyframes bgAnimatedGradient {
+  0% {
+    background-position: 0 85%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0 85%;
+  }
+}

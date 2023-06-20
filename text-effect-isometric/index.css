@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+/* MAIN CONTAINER - Wrap all the element */
+/* .container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+} */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f1f1f1;
+  overflow-x: hidden;
+}
+
+#text {
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12em;
+  line-height: 0.9em;
+  letter-spacing: 2px;
+  text-align: center;
+  transform: rotate(-28deg) skew(25deg);
+}
+
+/* The skew() CSS function defines a transformation 
+that skews an element on the 2D plane. */
+
+#text:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 30px;
+  left: -30px;
+  color: rgba(0, 0, 0, 0.3);
+  filter: blur(8px);
+  z-index: -1;
+}

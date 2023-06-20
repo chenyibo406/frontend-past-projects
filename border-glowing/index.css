@@ -1,0 +1,39 @@
+:root {
+  --clr-1: #052b2f;
+  --clr-2: #073438;
+  --clr-3: #0e4b50;
+  --clr-4: #2d8f85;
+  --clr-5: #637c54;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--clr-2);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+/* MAIN CONTAINER - Wrap all the element */
+
+.card {
+  height: 60vh;
+  aspect-ratio: 1/1.5;
+  background: var(--clr-1);
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--clr-5);
+  border-radius: inherit;
+}

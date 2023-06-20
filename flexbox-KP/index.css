@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 100px 100px;
+  height: 100vh;
+  /* color: white; */
+}
+/* MAIN CONTAINER - Wrap all the element */
+
+h1 {
+  color: crimson;
+  text-shadow: 2px 2px 0px greenyellow;
+}
+
+header {
+  border: 5px solid coral;
+}
+
+nav > ul > li {
+  border: 5px solid green;
+}
+
+.nav-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list li {
+  /* display: inline; */
+  /* width: max-content; */
+  /* width: min-content; */
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+/* minc-content are going to use the long single word */
+/* the default flex-grow is 0 */
+
+/* h1 {
+  color: coral;
+  text-shadow: 2px 2px 0 grey;
+  font-size: 2rem;
+} */
+
+/* h1,
+h2,
+h3 {
+  font-weight: bold;
+} */
+
+/* .columns {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  gap: 2rem;
+  border: 10px solid firebrick;
+} */
+
+/* @media (min-width: 600px) {
+  .columns {
+    flex-direction: row;
+  }
+} */
+
+/* .columns > * { */
+/* flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 300px; */
+/* width: 0; */
+/* flex: 1; */
+/* width: 100%; */
+/* flex-shrink: 0; */
+
+/* flex-basis: 100%;
+} */
+
+/* flex-basis is very similar with width */
+
+/* .card {
+  padding: 1rem;
+  background: green;
+} */
